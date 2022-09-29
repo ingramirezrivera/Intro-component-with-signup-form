@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+:root{
+    --Red: hsl(0, 100%, 74%); 
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --DarkBlue: hsl(249, 10%, 26%); 
+    --Shadow: rgba(165, 85, 85, 0.5);
+    --Shadow-button: hsl(154, 60%, 45%);
+    --GrayishBlue: hsl(246, 25%, 77%);
+    --White: #ffff;
+    --Popins: 'Poppins', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body{
+    font-family: var(--Popins);
+    font-size: 1.6rem;
+    background-color: var(--Red);
+    background-image: url('./images/bg-intro-mobile.png');
+    color: var(--White);
+}
+.main-container {
+    border: 1px solid red;
+    width: 330px;
+    margin: 96px auto 50px;
+}
+.title {
+    width: 235px;
+    margin: -8px auto 16px;
+    text-align: center;
+    font-size: 2.72rem;
+    line-height: 38px;
+}
+.description {
+    text-align: center;
+    margin:  0 10px 68px;
+}
+.offer {
+    background-color: var(--Blue);
+    width: 330px;
+    height: 90px;
+    padding: 22px 75px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 0  var(--Shadow) ;
+}
+.offer span {
+    font-weight: bold;
+}
+.form-container  {
+    background-color: var(--White);
+    border-radius: 10px;
+    padding: 24px;
+    box-shadow: 0 8px 0 var(--Shadow);
+}
+.form-container input {
+    width: 100%;
+    height: 55px;
+    margin-bottom: 18px;
+    border-radius: 4px;
+    border-radius: 4px;
+    border: 1px solid var(--GrayishBlue);
+    padding-left: 20px;
+    outline: none;
+    font-weight: 700;
+    font-family: var(--Popins);
+}
+.form-container input[type='submit'] {
+    background-color: var(--Green);
+    color: var(--White);
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 6px;
+    border-color: 1px solid var(--Green);
+    border-style: none;
+    box-shadow: 0 5px 0 var(--Shadow-button);
+}
+.form-container input[type='submit']:hover {
+    cursor: pointer;    
+}
+.error-container {
+    position: relative;
+    
+}
+.icon-error {
+    position: absolute;
+    right: 10px;
+    top: -59px;
+}
+.error {
+    text-align: right;
+    margin: -16px 0 18px;
+    color: var(--Red);
+    font-style: italic;
+    font-size: 1.2rem;
+}
+.terms {
+    color: var(--GrayishBlue);
+    font-size: 1.12rem;
+    margin: 0 14px;
+    text-align: center;
+}
+.terms a {
+    color: var(--Red) ;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/***************** Footer *****************/
+.attribution { font-size: 18px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
