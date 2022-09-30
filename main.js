@@ -17,6 +17,7 @@ button.addEventListener('click', (e) => {
     validateEmpty(lastName.value, lastName, lastNameError, lastName.placeholder);
     validateEmail(emailAdress.value, emailAdress, emailAdressError, 'Looks like this is not an email');
     validateEmpty(password.value, password, passwordError, password.placeholder);
+    validatePassword(password.value, password, passwordError, 'at least 8 characters');
 
 
 })
@@ -36,6 +37,23 @@ const validateEmail = (valueInput, divInput, divError, nameInput) => {
         <p class="error">${nameInput}</p> -->`
     }
 } 
+
+const validatePassword = (valueInput, divInput, divError, nameInput) => {
+    let regExp = /^(?=.*[a-zA-Z]).{8,}$/gm
+    if(regExp.test(valueInput) == true){
+        divInput.style.border = '1px solid hsl(246, 25%, 77%) ';
+        divError.innerHTML = ``;
+    }else {
+        divInput.style.border = '1px solid red';
+        divError.innerHTML = `<img
+        class="icon-error"
+        src="./images/icon-error.svg"
+        alt="Error"
+        />
+        <p class="error">${nameInput}</p> -->`
+    }
+
+}
 
 const validateEmpty = (valueInput, divInput, divError, nameInput) => {
     (valueInput.length == 0 ? showError(divInput, divError, nameInput) : hideError(divInput, divError));
