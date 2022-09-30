@@ -29,10 +29,9 @@
         <div class="offer"><span>Try it free 7 days</span> then $20/mo. thereafter</div>
         <div class="form-container">
           <form action="#">
-            <input id="firstnameinput" type="text" placeholder="First Name" />
-            <div class="error-container">
+            <input id="firstNameInput" type="text" placeholder="First Name" />
+            <div id="firstNameError" class="error-container">
               <!-- <img
-                id="firstNameError"
                 class="icon-error"
                 src="./images/icon-error.svg"
                 alt="Error"
@@ -40,7 +39,7 @@
               <p class="error">First Name cannot be empty</p> -->
             </div>
 
-            <input id="lastnameinput" type="text" placeholder="Last Name" />
+            <input id="lastNameInput" type="text" placeholder="Last Name" />
             <div id="lastNameError" class="error-container">
               <!-- <img
                 class="icon-error"
@@ -50,7 +49,7 @@
               <p class="error">Last Name cannot be empty</p> -->
             </div>
 
-            <input id="emailinput" type="email" placeholder="Email" />
+            <input id="emailInput" type="email" placeholder="Email" />
             <div id="emailError" class="error-container">
               <!-- <img
                 class="icon-error"
@@ -60,8 +59,8 @@
               <p class="error">Looks like this is not an email</p> -->
             </div>
 
-            <input id="passwordinput" type="password" placeholder="Password" />
-            <div id="passwordNameError" class="error-container">
+            <input id="passwordInput" type="password" placeholder="Password" />
+            <div id="passwordError" class="error-container">
               <!-- <img
                 class="icon-error"
                 src="./images/icon-error.svg"
@@ -97,5 +96,6 @@
         >.
       </p>
     </footer>
+    <script src="./main.js"></script>
   </body>
 </html>
